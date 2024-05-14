@@ -177,7 +177,7 @@ const Entry = () => {
               />
               <img
                 onClick={() => handleSubmitQuery()}
-                className="h-9 animate-bounce-short"
+                className="h-9 animate-pulse-short"
                 src={enterKey}
               />
             </div>

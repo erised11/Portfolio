@@ -7,8 +7,8 @@ export default {
     },
     extend: {
       animation: {
-        // Bounces 5 times 1s equals 5 seconds
-        "bounce-short": "pulse 1s ease-in-out 3",
+        // pulses 5 times 1s equals 5 seconds
+        "pulse-short": "pulse 1s ease-in-out 3",
       },
     },
   },

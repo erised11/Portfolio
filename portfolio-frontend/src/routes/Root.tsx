@@ -3,9 +3,9 @@ import NavBar from "../components/Nav/NavBar";
 
 export default function Root() {
   return (
-    <div className="w-[100vw] h-[100vh] bg-gray-700">
+    <div className="w-[100vw] min-h-[100vh] h-full bg-gray-700">
       <NavBar></NavBar>
-      <div className="lg:w-1/2 w-3/4 mx-auto">
+      <div className="xl:w-1/2 lg:w-3/5 md:w-3/4 w-5/6 mx-auto pb-32">
         <Outlet />
       </div>
     </div>
