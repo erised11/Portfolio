@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Typewriter";
+    font-weight: 400;
+    src: url(./assets/fonts/atwriter.ttf) format("woff");
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Terminal";
+    font-weight: 400;
+    src: url(./assets/fonts/Modeseven.ttf) format("woff");
+  }
+}
+
+body {
+  overflow: hidden;
+}

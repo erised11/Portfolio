@@ -1,0 +1,88 @@
+Brandon Ryan
+Software Engineer
+Profile Details-
+Highly driven and motivated Software Developer with expertise Pismo Beach
+in problem solving and writing maintainable, testable code. Able United States
+to effectively self-manage during independent projects, as well as collaborate as part 
+of a productive team.
+
+Contact -
++49 172 456 8844
+brandon.ryan.111@gmail.com
+
+Nationality -
+American
+
+LinkedIn -
+https://www.linkedin.com/in/brandon-ryan-b9b70811b/
+
+Skills (in order of best first) - 
+ReactJS
+Typescript
+AI
+Python
+Prompt Engineering
+Java
+Git
+HTML & CSS
+Functional Programming
+Angular
+
+Hobbies - 
+Sports: surfing, basketball,swimming, weightlifting
+Playing instruments
+Reading
+Writing
+Cooking
+
+Languages - 
+English (mother tongue)
+German (B2 level)
+
+Employment History -
+Senior Software Engineer at Slalom, Munich
+May 2023 - Present
+• Developed tools using AWS Sagemaker Jumpstart and Bedrock for generating SEO optimized descriptions and promotional text for product images.
+• Created a ReactJS Product Image Background Generator using HuggingFace Image Generation models and AWS Lambda.
+• Consulted for British Petroleum to improve front-end user flow and accessibility.
+• Led the frontend development of a secure file upload service for Bottneuro.
+
+Software Development Engineer at Amazon, San Luis Obispo
+April 2021 — April 2023
+• Designed infrastructure for validating customer form data.
+• Improved product accessibility using Angular material components and ARIA attributes.
+• Expanded Alexa Voice Service to additional countries.
+• Led a software migration campaign targeting over 1300 solutions company-wide.
+• Technical lead for a Prime Video expansion.
+
+Software Engineering Intern at Northrop Grumman, Sacramento 
+June 2020 — December 2020 
+• Enhanced TCSWaterfall tool for monitoring incoming signals from aircraft.
+• Dockerized TCS Waterfall solution for deployment to any system.
+• Conceived, designed, and implemented new features for miniSCE.
+  
+Software Engineering Intern at Riverbed, Sunnyvale
+June 2019 — September 2019
+• Developed resiliency infrastructure to improve High Availability functionality.
+• Implemented Pydbus API to monitor systemd services.
+• Wrote Python scripts to read process signals and store information.
+
+Desktop Support Technician at Cal Poly Information Technology Services, San Luis Obispo
+October 2017 — June 2020
+• Set up equipment for employee use and performed installations.
+• Developed training materials and trained users.
+• Answered user inquiries regarding computer software or hardware operation.
+
+Education - 
+Bachelors in Software Engineering, California Polytechnic
+University, San Luis Obispo
+Minor in German
+September 2016 — December 2020
+
+Capstone Projects - 
+Ropegun - IOS, San Luis Obispo
+January 2020 — March 2020
+Collaborated with Ropegun team to design, develop and produce an
+application for rock climbing. This app is available on the app store and
+was developed over a period of three months in a team of four.
+https://apps.apple.com/us/app/ropegun/id1470518082
