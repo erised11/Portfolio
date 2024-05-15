@@ -42,10 +42,12 @@ German (B2 level)
 Employment History -
 Senior Software Engineer at Slalom, Munich
 May 2023 - Present
+• Utilizing AI and AWS services to create Generative AI prototypes for customer enablement
 • Developed tools using AWS Sagemaker Jumpstart and Bedrock for generating SEO optimized descriptions and promotional text for product images.
 • Created a ReactJS Product Image Background Generator using HuggingFace Image Generation models and AWS Lambda.
 • Consulted for British Petroleum to improve front-end user flow and accessibility.
 • Led the frontend development of a secure file upload service for Bottneuro.
+
 
 Software Development Engineer at Amazon, San Luis Obispo
 April 2021 — April 2023

@@ -27,10 +27,14 @@ const Entry = () => {
             query: messages[messages.length - 1].text.props.value,
           });
           if (response.data && response.data.answer) {
-            onAddResponse(response.data.answer);
+            onAddResponse(response.data.answer, false);
           }
         } catch (error) {
           console.error("Error in sending message:", error);
+          onAddResponse(
+            "I'm sorry... an error occurred trying to reach my logic center. Please try again another time.",
+            true
+          );
         }
       }
     };
@@ -40,6 +44,25 @@ const Entry = () => {
   const calculateRows = (text: string) => {
     const averageCharsPerLine = 50; // Adjust this based on your textarea width and font size
     return Math.ceil(text.length / averageCharsPerLine) || 1;
+  };
+
+  const calculateTypingDelay = (text: string) => {
+    const maxDelay = 50;
+    const minDelay = 14;
+    const minLen = 5;
+    const maxLen = 100;
+    const len = text.length;
+
+    if (len <= minLen) {
+      return maxDelay;
+    } else if (len >= maxLen) {
+      return minDelay;
+    } else {
+      // Linear interpolation
+      return (
+        maxDelay - ((maxDelay - minDelay) * (len - minLen)) / (maxLen - minLen)
+      );
+    }
   };
 
   const onAddMessage = () => {
@@ -64,33 +87,39 @@ const Entry = () => {
     setUserInput("");
   };
 
-  const calculateTypingDelay = (text: string) => {
-    const maxDelay = 50;
-    const minDelay = 14;
-    const minLen = 5;
-    const maxLen = 100;
-    const len = text.length;
-
-    if (len <= minLen) {
-      return maxDelay;
-    } else if (len >= maxLen) {
-      return minDelay;
-    } else {
-      // Linear interpolation
-      return (
-        maxDelay - ((maxDelay - minDelay) * (len - minLen)) / (maxLen - minLen)
-      );
-    }
+  const onAddError = () => {
+    setMessages([
+      ...messages,
+      {
+        text: (
+          <div className="text-red-500">
+            <Typewriter
+              onInit={(typewriter: any) => {
+                const { cursor } = typewriter.state.elements;
+                typewriter
+                  .changeDelay(30)
+                  .typeString(
+                    "I'm sorry... an error occurred trying to reach my logic center. Please try again another time."
+                  )
+                  .callFunction(() => cursor.setAttribute("hidden", "hidden"))
+                  .start();
+              }}
+            />
+          </div>
+        ),
+        from: "ai",
+      },
+    ]);
   };
 
-  const onAddResponse = (response: string) => {
+  const onAddResponse = (response: string, error: boolean) => {
     const typingDelay = calculateTypingDelay(response);
     setResponses([...responses, response]); // store responses for lookup / summarization later
     setMessages([
       ...messages,
       {
         text: (
-          <div>
+          <div className={`${error && "text-red-500"}`}>
             <Typewriter
               onInit={(typewriter: any) => {
                 const { cursor } = typewriter.state.elements;
@@ -122,7 +151,7 @@ const Entry = () => {
   return (
     <div className="text-lg">
       <div className="flex flex-col gap-10 text-green-500 font-terminal tracking-widest">
-        <div className="bg-black h-[400px] rounded-xl">
+        <div className="bg-black h-[400px] rounded-xl shadow-3d">
           <div className="w-full h-[400px] flex flex-col-reverse overflow-auto">
             <div className="w-full mt-5 ">
               <div className="flex flex-row p-5 gap-5">
@@ -166,7 +195,7 @@ const Entry = () => {
           </div>
         </div>
         {terminalReady && (
-          <div className="bg-black h-16 w-full mx-auto rounded-xl text-lg box-content flex flex-col justify-center">
+          <div className="bg-black shadow-3d h-16 w-full mx-auto rounded-xl text-lg box-content flex flex-col justify-center">
             <div className="flex flex-row px-5 gap-5 items-center">
               <div>~/workspace/&gt;</div>
               <input

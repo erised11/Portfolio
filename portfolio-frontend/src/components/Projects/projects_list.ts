@@ -12,7 +12,7 @@ export const PROJECTS = [
   {
     title: "Racecar Identity Sorter (RIS) ",
     description:
-      "This project solved them problem of a racecar photographer. After a race day, thousands of photos would need to be sorted manually by hand, visually determining which Racecar belonged to who by identifying the number written on the side of the car. This project reduces the time spent on this process by about 4000%",
+      "This project solved the problem of a racecar photographer. After a race day, thousands of photos would need to be sorted manually by hand, visually determining which Racecar belonged to who by identifying the number written on the side of the car. This project reduces the time spent on this process by about 4000%",
     skills: ["OpenAI", "LangChain", "RAG (Retrieval Augmented Generation)"],
     date_completed: "TBD",
     repo_link: "TBD",

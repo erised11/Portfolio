@@ -5,17 +5,6 @@ from openai import OpenAI
 import random
 import string
 
-def generate_gibberish_word(min_length=3, max_length=7):
-    """Generate a gibberish word with a random length between min_length and max_length."""
-    length = random.randint(min_length, max_length)
-    return ''.join(random.choice(string.ascii_lowercase) for _ in range(length))
-
-def generate_gibberish_sentence(min_words=10, max_words=15):
-    """Generate a sentence of gibberish words with a random length between min_words and max_words."""
-    sentence_length = random.randint(min_words, max_words)
-    return ' '.join(generate_gibberish_word() for _ in range(sentence_length))
-
-
 app = Flask(__name__)
 CORS(app)  # This enables CORS for all domains; adjust as needed for production
 client = OpenAI()
