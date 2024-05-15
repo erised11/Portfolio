@@ -19,4 +19,19 @@ export const PROJECTS = [
     image_url:
       "https://static.theceomagazine.net/wp-content/uploads/2021/02/18151547/porsche-911-gt3-1.jpg",
   },
+  {
+    title: "Intelligent Subtitles Extension",
+    description:
+      "Many movies of today have difficult to understand dialogue, especially in scenes with loud background noise or special effect sounds playing. It is not an ideal experience to rewind a movie and turn on subtitles, and then turn them back off once the scene is over. However, sometimes that's what's required to make sure you don't miss critical information in a film. This extension uses AI to intelligently determine when subtitles should be turned on in a film. This takes the onus off the viewer, allowing them to sit back and relax, knowing they won't miss a beat.",
+    skills: [
+      "OpenAI",
+      "LangChain",
+      "RAG (Retrieval Augmented Generation)",
+      "Model Training",
+    ],
+    date_completed: "TBD",
+    repo_link: "TBD",
+    image_url:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-C_oNXWMsi7jFw3bSijEnMjjP7RXXPWmmoBNwd7i9FA&s",
+  },
 ];

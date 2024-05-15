@@ -17,3 +17,7 @@
     src: url(./assets/fonts/Modeseven.ttf) format("woff");
   }
 }
+
+body {
+  background-color: rgb(55 65 81);
+}

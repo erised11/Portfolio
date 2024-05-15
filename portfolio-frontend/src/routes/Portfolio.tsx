@@ -4,7 +4,7 @@ import { PROJECTS } from "../components/Projects/projects_list";
 
 const Portfolio = () => {
   return (
-    <div className="bg-gray-500 w-full text-white px-8 py-10 ">
+    <div className="bg-gray-500 w-full text-white px-10 py-12">
       <h1 className="text-6xl">
         <Typewriter
           onInit={(typewriter: any) => {
@@ -17,7 +17,7 @@ const Portfolio = () => {
           }}
         />
       </h1>
-      <p className="text-xl my-4 pb-8 border-b-2">
+      <p className="text-xl mt-4 mb-8 pb-4 border-b-2">
         Here all personal AI/Frontend projects created by Brandon.
       </p>
       {PROJECTS.map((project, i) => (
