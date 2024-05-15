@@ -87,31 +87,6 @@ const Entry = () => {
     setUserInput("");
   };
 
-  const onAddError = () => {
-    setMessages([
-      ...messages,
-      {
-        text: (
-          <div className="text-red-500">
-            <Typewriter
-              onInit={(typewriter: any) => {
-                const { cursor } = typewriter.state.elements;
-                typewriter
-                  .changeDelay(30)
-                  .typeString(
-                    "I'm sorry... an error occurred trying to reach my logic center. Please try again another time."
-                  )
-                  .callFunction(() => cursor.setAttribute("hidden", "hidden"))
-                  .start();
-              }}
-            />
-          </div>
-        ),
-        from: "ai",
-      },
-    ]);
-  };
-
   const onAddResponse = (response: string, error: boolean) => {
     const typingDelay = calculateTypingDelay(response);
     setResponses([...responses, response]); // store responses for lookup / summarization later

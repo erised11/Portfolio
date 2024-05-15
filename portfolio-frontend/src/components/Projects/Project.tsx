@@ -1,5 +1,4 @@
 import Typewriter from "typewriter-effect";
-import image from "../../assets/react.svg";
 
 export interface ProjectInterface {
   title: string;
@@ -32,7 +31,7 @@ const Project = ({ project }: ProjectProps) => {
       <div className="flex flex-col md:flex-row gap-6">
         <img
           src={project.image_url}
-          className="h-48 w-48 object-cover rounded-xl drop-shadow-lg"
+          className="h-48 w-48 object-cover rounded-xl shadow-3d-small"
         />
         <div>
           <p className="text-gray-300">{project.description}</p>

@@ -4,7 +4,7 @@ import { PROJECTS } from "../components/Projects/projects_list";
 
 const Portfolio = () => {
   return (
-    <div className="bg-gray-500 w-full text-white px-10 py-12">
+    <div className="bg-gray-500 w-full text-white px-10 py-12 shadow-3d rounded-b-xl">
       <h1 className="text-6xl">
         <Typewriter
           onInit={(typewriter: any) => {
