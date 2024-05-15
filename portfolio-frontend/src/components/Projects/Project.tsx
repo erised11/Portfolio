@@ -35,7 +35,7 @@ const Project = ({ project }: ProjectProps) => {
         />
         <div>
           <p className="text-gray-300">{project.description}</p>
-          <p>Skills involved: {project.skills}</p>
+          <p>Skills involved: {project.skills.join(", ")}</p>
           <p>Date completed: {project.date_completed} </p>
           <p>Repository link: {project.repo_link}</p>
         </div>
