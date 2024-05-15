@@ -69,7 +69,7 @@ const FormComponent = () => {
           <label className="block text-sm font-medium leading-6">Message</label>
           <div className="my-2">
             <textarea
-              rows={3}
+              rows={5}
               {...register("message")}
               className="pl-3 block w-full rounded-lg border py-1.5 text-gray-900 placeholder:text-gray-400  sm:text-sm sm:leading-6"
             />
