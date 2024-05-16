@@ -13,9 +13,16 @@ type ProjectProps = {
   project: ProjectInterface;
 };
 
+const projectClickHandler = (repoLink: string) => {
+  window.location.href = repoLink;
+};
+
 const Project = ({ project }: ProjectProps) => {
   return (
-    <div className="flex flex-col mb-12 last:mb-0">
+    <div
+      onClick={() => projectClickHandler(project.repo_link)}
+      className="flex flex-col mb-12 last:mb-0 hover:scale-105 transform duration-200 rounded-xl hover:cursor-pointer"
+    >
       <h2 className="font-bold underline text-2xl pb-6">
         <Typewriter
           onInit={(typewriter: any) => {

@@ -129,13 +129,13 @@ const Entry = () => {
         <div className="bg-black h-[400px] rounded-xl shadow-3d">
           <div className="w-full h-[400px] flex flex-col-reverse overflow-auto">
             <div className="w-full mt-5 ">
-              <div className="flex flex-row p-5 gap-5">
+              <div className="flex md:flex-row flex-col p-5 gap-5">
                 <div className="">~/workspace/&gt;</div>
                 <Typewriter
                   onInit={(typewriter: any) => {
                     const { cursor } = typewriter.state.elements;
                     typewriter
-                      .changeDelay(14)
+                      .changeDelay(19)
                       .typeString("My Name is Brandon Ryan. ")
                       .pauseFor(400)
                       .typeString("Welcome to my portfolio. ")
@@ -143,9 +143,10 @@ const Entry = () => {
                       .typeString(
                         "This portfolio is powered by AI! Find out more about me by chatting, or simply browse the other tabs."
                       )
+                      .pauseFor(500)
                       .callFunction(() => setTerminalReady(true))
                       .typeString(
-                        "\n\nTry asking something like... what is Brandon's experience?"
+                        "Try asking something like... what is Brandon's experience?"
                       )
                       .callFunction(() =>
                         cursor.setAttribute("hidden", "hidden")
@@ -155,7 +156,10 @@ const Entry = () => {
                 />
               </div>
               {messages.map((message, index) => (
-                <div key={index} className="flex flex-row gap-5 p-5">
+                <div
+                  key={index}
+                  className="flex flex-col md:flex-row gap-5 p-5"
+                >
                   <div className="">~/workspace/&gt;</div>
                   <div className="w-full">
                     <div
@@ -169,10 +173,18 @@ const Entry = () => {
             </div>
           </div>
         </div>
-        {terminalReady && (
-          <div className="bg-black shadow-3d h-16 w-full mx-auto rounded-xl text-lg box-content flex flex-col justify-center">
+
+        <div className="h-16 w-full relative">
+          <div
+            className={`h-full bg-black shadow-3d mx-auto rounded-xl text-lg flex flex-col justify-center
+            transform ${
+              terminalReady
+                ? "opacity-100 trnaslate-y-0"
+                : "opacity-0 translate-y-[50px]"
+            } transition duration-500`}
+          >
             <div className="flex flex-row px-5 gap-5 items-center">
-              <div>~/workspace/&gt;</div>
+              <div className="hidden sm:flex">~/workspace/&gt;</div>
               <input
                 value={userInput}
                 onChange={(e) => setUserInput(e.target.value)}
@@ -186,7 +198,7 @@ const Entry = () => {
               />
             </div>
           </div>
-        )}
+        </div>
       </div>
     </div>
   );

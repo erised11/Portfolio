@@ -15,7 +15,7 @@ export const PROJECTS = [
       "This project solved the problem of a racecar photographer. After a race day, thousands of photos would need to be sorted manually by hand, visually determining which Racecar belonged to who by identifying the number written on the side of the car. This project reduces the time spent on this process by about 4000%",
     skills: ["OpenAI", "LangChain", "RAG (Retrieval Augmented Generation)"],
     date_completed: "TBD",
-    repo_link: "TBD",
+    repo_link: "https://github.com/erised11/Portfolio",
     image_url:
       "https://static.theceomagazine.net/wp-content/uploads/2021/02/18151547/porsche-911-gt3-1.jpg",
   },
@@ -30,7 +30,7 @@ export const PROJECTS = [
       "Model Training",
     ],
     date_completed: "TBD",
-    repo_link: "TBD",
+    repo_link: "https://github.com/erised11/Portfolio",
     image_url:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-C_oNXWMsi7jFw3bSijEnMjjP7RXXPWmmoBNwd7i9FA&s",
   },
