@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import { Dropdown } from "flowbite-react";
 
+import logo from "../../assets/aperture3.png";
+
 const NavBar = () => {
   return (
-    <div className="h-32 text-gray-300 flex justify-end tracking-widest px-10 py-10">
+    <div className="h-32 text-gray-300 flex justify-between tracking-widest px-10 py-10">
+      <img src={logo} />
       <div className="hidden sm:flex gap-10">
         <div>
           <Link to={"/"}>

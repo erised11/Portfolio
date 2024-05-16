@@ -193,7 +193,7 @@ const Entry = () => {
               />
               <img
                 onClick={() => handleSubmitQuery()}
-                className="h-9 animate-pulse-short"
+                className="h-9 opacity-60"
                 src={enterKey}
               />
             </div>
